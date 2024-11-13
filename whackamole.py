@@ -43,7 +43,6 @@ def main():
                         screen.fill("light green")
                         for i in range(0, 20):
                             pygame.draw.line(screen, (0, 0, 0), (i * 32, 0), (i * 32, 640))
-                        # draws horizontal lines
                         for i in range(0, 16):
                             pygame.draw.line(screen, (0, 0, 0), (0, i * 32), (640, i * 32))
                         mole = screen.blit(mole_image, mole_image.get_rect(topleft=event.pos))
